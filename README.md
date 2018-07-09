@@ -4,8 +4,8 @@
 
 ## Version: 0.13.0
 
-This is the official PHP SDK for the Currencycloud API. Additional documentation 
-for each API endpoint can be found at [developer.currencycloud.com](https://developer.currencycloud.com/documentation/getting-started/introduction/). 
+This is the official PHP SDK for the Currencycloud API. Additional documentation
+for each API endpoint can be found at [developer.currencycloud.com](https://developer.currencycloud.com/documentation/getting-started/introduction/).
 
 If you have any queries or you require support, please contact our sales team at sales@currencycloud.com.  Please quote your login id in any correspondence as this makes
 it simpler for us to locate your account and give you the support you need.
@@ -14,13 +14,13 @@ it simpler for us to locate your account and give you the support you need.
 
 ### Composer (optional, but highly recommended)
 
-CurrencyCloud-PHP is a Composer project. While using Composer is not strictly required, 
+CurrencyCloud-PHP is a Composer project. While using Composer is not strictly required,
 it will be far easier to simply make use of Composer to do the dependency management and autoloading for you.
 
 
 ### Supported PHP version
 
-This library aims to support and is tested against PHP 5.5 and greater.
+This library aims to support and is tested against PHP 7.0 and greater.
 
 ## Installation
 
@@ -43,7 +43,7 @@ require 'vendor/autoload.php';
 
 # Usage
 
-You can register for demo API key at [developer.currencycloud.com](https://developer.currencycloud.com/api-register/). 
+You can register for demo API key at [developer.currencycloud.com](https://developer.currencycloud.com/api-register/).
 
 An example in PHP 5.5:
 
@@ -107,11 +107,11 @@ For a slightly longer example, see [cook-book.php](/examples/cook-book.php), whi
 
 ### Reusing client for multiple requests
 
-Authentication tokens are long-livedand are meant to be reused for multiple requests. This will improve performance of calls through the api. 
+Authentication tokens are long-livedand are meant to be reused for multiple requests. This will improve performance of calls through the api.
 
 ## On Behalf Of
 
-If you want to make calls on behalf of another user (e.g. someone who is your end-client), you 
+If you want to make calls on behalf of another user (e.g. someone who is your end-client), you
 can execute certain commands 'on behalf of' the user's contact id. Here is an example:
 
 ```php
@@ -181,7 +181,7 @@ error in any correspondence can be very helpful.
 
 ## Testing
 
-Test cases can be run with `vendor/bin/phpunit`. 
+Test cases can be run with `vendor/bin/phpunit`.
 
 ## Dependencies
 
