@@ -71,6 +71,8 @@ class Client
             'secured' => $secured
         ];
 
+
+
         //Check for on behalf of in order to inject it if needed
         $isOnBehalfOfUsedInParams = false;
         foreach ([&$queryParams, &$requestParams] as &$paramsArray) {
@@ -97,7 +99,6 @@ class Client
 
             $queryParams = array_filter($queryParams);
             $requestParams = array_filter($requestParams);
-
             if (count($requestParams) > 0) {
                 if (!isset($options['form_params'])) {
                     $options['form_params'] = [];
@@ -126,6 +127,7 @@ class Client
                         $url,
                         $originalRequest
                     );
+
                     $this->eventDispatcher->dispatch(ClientHttpErrorEvent::NAME, $event);
                     $interceptedResponse = $event->getInterceptedResponse();
                     if (null !== $interceptedResponse) {

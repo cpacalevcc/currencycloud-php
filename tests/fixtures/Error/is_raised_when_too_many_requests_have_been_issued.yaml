@@ -11,3 +11,36 @@
       Content-Type: application/json
       Content-Length: '219'
     body: '{"error_code":"too_many_requests","error_messages":{"base":[{"code":"too_many_requests","message":"Too many requests have been made to the api. Please refer to the Developer Center for more information","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=ashley.ford%2Bdevcentre%40currencycloud.com&api_key=57b40fe690f09b8e463d9601b9b9de86572688cb13e70c9cc65247f18a89215c'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:21 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d77ce3f42e8383db6e55740b05f283ceb1533292580; expires=Sat, 03-Aug-19 10:36:20 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=GRN386vvIOUCJCZHYjEQsKherdruxMHwCiCqVClFJpG5LD/+Hbb283MLfwQihmqs5X8BYsdiU6fU/VrWI+eJlDV/20XjFNvINgXp2J7QDUYP+5vl37qW8GvMwlgo; Expires=Fri, 10 Aug 2018 10:36:20 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 2d544f3e-3363-453d-9449-922adbbe78c4
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 444824812ac1bc4a-LHR
+        body: '{"auth_token":"563e0c5d3847a5d68328bfb1292c99b6"}'

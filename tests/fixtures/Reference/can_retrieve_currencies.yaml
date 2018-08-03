@@ -12,3 +12,162 @@
       Content-Length: '1363'
       X-Request-Id: '2775201683481262929'
     body: '{"currencies":[{"code":"AED","decimal_places":2,"name":"United Arab Emirates Dirham"},{"code":"AUD","decimal_places":2,"name":"Australian Dollar"},{"code":"CAD","decimal_places":2,"name":"Canadian Dollar"},{"code":"CHF","decimal_places":2,"name":"Swiss Franc"},{"code":"CZK","decimal_places":2,"name":"Czech Koruna"},{"code":"DKK","decimal_places":2,"name":"Danish Krone"},{"code":"EUR","decimal_places":2,"name":"Euro"},{"code":"GBP","decimal_places":2,"name":"Pound Sterling"},{"code":"HKD","decimal_places":2,"name":"Hong Kong Dollar"},{"code":"HUF","decimal_places":2,"name":"Hungarian Forint"},{"code":"ILS","decimal_places":2,"name":"Israeli New Sheqel"},{"code":"JPY","decimal_places":0,"name":"Japanese Yen"},{"code":"MXN","decimal_places":2,"name":"Mexican Peso"},{"code":"NOK","decimal_places":2,"name":"Norwegian Krone"},{"code":"NZD","decimal_places":2,"name":"New Zealand Dollar"},{"code":"PLN","decimal_places":2,"name":"Polish Zloty"},{"code":"RON","decimal_places":2,"name":"Romanian New Leu"},{"code":"SEK","decimal_places":2,"name":"Swedish Krona"},{"code":"SGD","decimal_places":2,"name":"Singapore Dollar"},{"code":"THB","decimal_places":2,"name":"Thai Baht"},{"code":"TRY","decimal_places":2,"name":"Turkish Lira"},{"code":"USD","decimal_places":2,"name":"United States Dollar"},{"code":"ZAR","decimal_places":2,"name":"South African Rand"}]}'
+-
+    request:
+        method: GET
+        url: 'https://devapi.currencycloud.com/v2/reference/currencies'
+        headers:
+            Host: devapi.currencycloud.com
+            Accept-Encoding: null
+            X-Auth-Token: 43814754e0f16a8e8b0bbd1395dd1692
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:17 GMT'
+            Content-Type: application/json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d45b373bc511a6e9ce9bd2034e433afc41533117616; expires=Thu, 01-Aug-19 10:00:16 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=FeIkoPdJK9rS3svu/Z5XBmtO2gnoXV3VMcwrI1iFCVkR15hQXuWqhzzgGBpa4Mx1zwgBRsoF7ZdRQMV0nu5OmfGYhQgKbK6Z/e+Nb9n28lmKADJ8K1iBaZmzNuyt; Expires=Wed, 08 Aug 2018 10:00:17 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 4baca7cb-0be2-4471-9ab0-7f511787b291
+            Access-Control-Allow-Methods: GET
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 443774f22a14bc4a-LHR
+        body: '{"error_code":"auth_failed","error_messages":{"username":[{"code":"invalid_supplied_credentials","message":"Authentication failed with the supplied credentials","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=rjnienaber%40gmail.com&api_key=ef0fd50fca1fb14c1fab3a8436b9ecb65f02f129fd87eafa45ded8ae257528f0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:18 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d59824a58bff79954f40f6e0ad14ecb481533117617; expires=Thu, 01-Aug-19 10:00:17 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=nGIR2cjSq6N++KGywWrrCb9Qp+gzZwo9AgjDthO/DYxNGT2j1kfUpRav8rn58e0+dUqCy6N+5F5/MdhkxiAlpMnJwLNgb4DwVf4aOfcU3yALvWqM4rvSbGgUXL8w; Expires=Wed, 08 Aug 2018 10:00:17 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: c75047d9-632c-4a04-8b25-85589355626f
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 443774f358cfbb8a-LHR
+        body: '{"auth_token":"3dfc92616ae60a6b0b9f61f650176c42"}'
+-
+    request:
+        method: GET
+        url: 'https://devapi.currencycloud.com/v2/reference/currencies'
+        headers:
+            Host: devapi.currencycloud.com
+            Accept-Encoding: null
+            X-Auth-Token: 3dfc92616ae60a6b0b9f61f650176c42
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:19 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=df7231e97b0595152332da4aa0939db0c1533117618; expires=Thu, 01-Aug-19 10:00:18 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=98ZQrbktnAsyZsveDyigukuF7AWyC71aTkOIywHC6ZGWPEefCVh0MiRWAhMsgUWAqZVyhnW85ZuVByYXILi6z4Ab4lth/D77TESCKqC0X41uM6zAymijkYV7XAU7; Expires=Wed, 08 Aug 2018 10:00:18 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 5a1ff490-bfd5-4ff4-94df-afe41c1e3389
+            Access-Control-Allow-Methods: GET
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 443774fe5b98bbb4-LHR
+        body: '{"currencies":[{"code":"AED","decimal_places":2,"name":"United Arab Emirates Dirham","online_trading":true},{"code":"AUD","decimal_places":2,"name":"Australian Dollar","online_trading":true},{"code":"BGN","decimal_places":2,"name":"Bulgarian Lev","online_trading":true},{"code":"BHD","decimal_places":2,"name":"Bahraini Dinar","online_trading":true},{"code":"CAD","decimal_places":2,"name":"Canadian Dollar","online_trading":true},{"code":"CHF","decimal_places":2,"name":"Swiss Franc","online_trading":true},{"code":"CNY","decimal_places":2,"name":"Chinese Yuan","online_trading":true},{"code":"CZK","decimal_places":2,"name":"Czech Koruna","online_trading":true},{"code":"DKK","decimal_places":2,"name":"Danish Krone","online_trading":true},{"code":"EUR","decimal_places":2,"name":"Euro","online_trading":true},{"code":"GBP","decimal_places":2,"name":"British Pound","online_trading":true},{"code":"HKD","decimal_places":2,"name":"Hong Kong Dollar","online_trading":true},{"code":"HRK","decimal_places":2,"name":"Croatian Kuna","online_trading":true},{"code":"HUF","decimal_places":2,"name":"Hungarian Forint","online_trading":true},{"code":"ILS","decimal_places":2,"name":"Israeli New Sheqel","online_trading":true},{"code":"INR","decimal_places":2,"name":"Indian Rupee","online_trading":true},{"code":"JMD","decimal_places":2,"name":"Jamaican Dollar","online_trading":false},{"code":"JPY","decimal_places":0,"name":"Japanese Yen","online_trading":true},{"code":"KES","decimal_places":2,"name":"Kenyan Shilling","online_trading":true},{"code":"KWD","decimal_places":2,"name":"Kuwaiti Dinar","online_trading":true},{"code":"MXN","decimal_places":2,"name":"Mexican Peso","online_trading":true},{"code":"NOK","decimal_places":2,"name":"Norwegian Krone","online_trading":true},{"code":"NZD","decimal_places":2,"name":"New Zealand Dollar","online_trading":true},{"code":"OMR","decimal_places":2,"name":"Omani Rial","online_trading":true},{"code":"PLN","decimal_places":2,"name":"Polish Zloty","online_trading":true},{"code":"QAR","decimal_places":2,"name":"Qatari Rial","online_trading":true},{"code":"RON","decimal_places":2,"name":"Romanian New Leu","online_trading":true},{"code":"SAR","decimal_places":2,"name":"Saudi Riyal","online_trading":true},{"code":"SEK","decimal_places":2,"name":"Swedish Krona","online_trading":true},{"code":"SGD","decimal_places":2,"name":"Singapore Dollar","online_trading":true},{"code":"THB","decimal_places":2,"name":"Thai Baht","online_trading":true},{"code":"TRY","decimal_places":2,"name":"Turkish Lira","online_trading":true},{"code":"UGX","decimal_places":0,"name":"Ugandan Shilling","online_trading":true},{"code":"USD","decimal_places":2,"name":"United States Dollar","online_trading":true},{"code":"ZAR","decimal_places":2,"name":"South African Rand","online_trading":true}]}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=ashley.ford%2Bdevcentre%40currencycloud.com&api_key=57b40fe690f09b8e463d9601b9b9de86572688cb13e70c9cc65247f18a89215c'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:37 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=db42998b1bb31110e64c0246446af03bf1533292595; expires=Sat, 03-Aug-19 10:36:35 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=jWfzyus4lD61+qZBuCbGIKkalLpncmJicf7TvCGs/boAQo+272qOztH54WDcl9gh8Ani6V1f0Ulgv0QS7WS9R13RJab2/ioRgEoa7W00ax+VFvBw08jK+WMsXHdg; Expires=Fri, 10 Aug 2018 10:36:35 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 8cc45e77-d9be-4df9-9fbe-2011cfb5e656
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 444824e42e14bbe4-LHR
+        body: '{"auth_token":"50721ffd48b1117a49275b85b39dcf81"}'
+-
+    request:
+        method: GET
+        url: 'https://devapi.currencycloud.com/v2/reference/currencies'
+        headers:
+            Host: devapi.currencycloud.com
+            Accept-Encoding: null
+            X-Auth-Token: 50721ffd48b1117a49275b85b39dcf81
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:38 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d32484f26f1c34a0304f15f0c764755bf1533292597; expires=Sat, 03-Aug-19 10:36:37 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=AwWxSFTTKbDRZAcPgSx3xzM+gmydRXnUFukZkDdl+N7DpRBdZCmtMzFfDXkZZQxeSlNB4eXqCE4NgVmDWenx2knRRXDZ5bMLUh4srl5IzGpwTn3FdGX27eeeI110; Expires=Fri, 10 Aug 2018 10:36:37 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 8af6241d-7a74-4631-903b-7f0d1008ade6
+            Access-Control-Allow-Methods: GET
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 444824f049d6bbc6-LHR
+        body: '{"currencies":[{"code":"AED","decimal_places":2,"name":"United Arab Emirates Dirham","online_trading":true},{"code":"AUD","decimal_places":2,"name":"Australian Dollar","online_trading":true},{"code":"BGN","decimal_places":2,"name":"Bulgarian Lev","online_trading":true},{"code":"BHD","decimal_places":2,"name":"Bahraini Dinar","online_trading":true},{"code":"CAD","decimal_places":2,"name":"Canadian Dollar","online_trading":true},{"code":"CHF","decimal_places":2,"name":"Swiss Franc","online_trading":true},{"code":"CNY","decimal_places":2,"name":"Chinese Yuan","online_trading":true},{"code":"CZK","decimal_places":2,"name":"Czech Koruna","online_trading":true},{"code":"DKK","decimal_places":2,"name":"Danish Krone","online_trading":true},{"code":"EUR","decimal_places":2,"name":"Euro","online_trading":true},{"code":"GBP","decimal_places":2,"name":"British Pound","online_trading":true},{"code":"HKD","decimal_places":2,"name":"Hong Kong Dollar","online_trading":true},{"code":"HRK","decimal_places":2,"name":"Croatian Kuna","online_trading":true},{"code":"HUF","decimal_places":2,"name":"Hungarian Forint","online_trading":true},{"code":"ILS","decimal_places":2,"name":"Israeli New Sheqel","online_trading":true},{"code":"INR","decimal_places":2,"name":"Indian Rupee","online_trading":true},{"code":"JMD","decimal_places":2,"name":"Jamaican Dollar","online_trading":false},{"code":"JPY","decimal_places":0,"name":"Japanese Yen","online_trading":true},{"code":"KES","decimal_places":2,"name":"Kenyan Shilling","online_trading":true},{"code":"KWD","decimal_places":2,"name":"Kuwaiti Dinar","online_trading":true},{"code":"MXN","decimal_places":2,"name":"Mexican Peso","online_trading":true},{"code":"NOK","decimal_places":2,"name":"Norwegian Krone","online_trading":true},{"code":"NZD","decimal_places":2,"name":"New Zealand Dollar","online_trading":true},{"code":"OMR","decimal_places":2,"name":"Omani Rial","online_trading":true},{"code":"PLN","decimal_places":2,"name":"Polish Zloty","online_trading":true},{"code":"QAR","decimal_places":2,"name":"Qatari Rial","online_trading":true},{"code":"RON","decimal_places":2,"name":"Romanian New Leu","online_trading":true},{"code":"SAR","decimal_places":2,"name":"Saudi Riyal","online_trading":true},{"code":"SEK","decimal_places":2,"name":"Swedish Krona","online_trading":true},{"code":"SGD","decimal_places":2,"name":"Singapore Dollar","online_trading":true},{"code":"THB","decimal_places":2,"name":"Thai Baht","online_trading":true},{"code":"TRY","decimal_places":2,"name":"Turkish Lira","online_trading":true},{"code":"UGX","decimal_places":0,"name":"Ugandan Shilling","online_trading":true},{"code":"USD","decimal_places":2,"name":"United States Dollar","online_trading":true},{"code":"ZAR","decimal_places":2,"name":"South African Rand","online_trading":true}]}'

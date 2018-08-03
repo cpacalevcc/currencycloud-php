@@ -1,0 +1,67 @@
+
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=development%40currencycloud.com&api_key=deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:43:30 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d46ebb3987341c051aa56c0383b48df861533293008; expires=Sat, 03-Aug-19 10:43:28 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=q5mcxZsIzBUzNK05fmuDH0zg/szgdNxXZ6XzzZyPUU3V11in/x6uiCHJSvRaRPGx1ONzvoNSKyHEg0ZD4qUSI4rVIYpo0VxbqkNYCxwK0Bt69k8FQttkz8CJb8GW; Expires=Fri, 10 Aug 2018 10:43:29 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: ec243d15-9498-48ef-80e4-89a5d0152c24
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 44482efa3863bbd8-LHR
+        body: '{"error_code":"auth_failed","error_messages":{"username":[{"code":"invalid_supplied_credentials","message":"Authentication failed with the supplied credentials","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=development%2Bauthorisation%40currencycloud.com&api_key=deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Date: 'Fri, 03 Aug 2018 13:12:56 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d582877b70c00e9977f6c183a2ba966b31533301976; expires=Sat, 03-Aug-19 13:12:56 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=hePV0lkya+YnC1i+5mY8AJCqJqqztntSNvETMrExytFwWQpzAS5nKBM6MMaP2WGE8Rm/7hMaA+m+PpgMWoEkbJMCK2bZpFXHtHAoBJvvRscafheMH3KgyjEYRfUw; Expires=Fri, 10 Aug 2018 13:12:56 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: b91d77d2-a490-425d-8723-710f9614f92b
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 444909eb8aecbbba-LHR
+        body: '{"error_code":"auth_failed","error_messages":{"username":[{"code":"invalid_supplied_credentials","message":"Authentication failed with the supplied credentials","params":{}}]}}'

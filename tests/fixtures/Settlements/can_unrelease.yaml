@@ -13,3 +13,165 @@
       Content-Length: '396'
       X-Request-Id: '2778849575324579937'
     body: '{"id":"51c619e0-0256-40ad-afba-ca4114b936f9","status":"open","short_reference":"20150504-SHKTFD","type":"bulk","conversion_ids":["9bb4a49b-f959-402f-8bb8-4463b18d93c7"],"entries":[{"USD":{"receive_amount":"0.00","send_amount":"1512.00"}},{"GBP":{"receive_amount":"1000.00","send_amount":"0.00"}}],"created_at":"2015-05-04T21:14:48+00:00","updated_at":"2015-05-04T21:51:51+00:00","released_at":""}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/settlements/51c619e0-0256-40ad-afba-ca4114b936f9/unrelease'
+        headers:
+            Host: devapi.currencycloud.com
+            Content-Length: '0'
+            Accept-Encoding: null
+            X-Auth-Token: 43814754e0f16a8e8b0bbd1395dd1692
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:29 GMT'
+            Content-Type: application/json
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=de9096462b8131e44de85c1bff00538131533117629; expires=Thu, 01-Aug-19 10:00:29 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=ThelOOrQl3z/nnax8+j3fMXUBvk0tx6KIDY+J+6f8CdZb4GLcSOfGJPSLY01sS32El3iquzWILIX9Hm8YCC9OhPHwfJ2CxstCQxxpamRnUaOLezJLVyTVhPsjkqD; Expires=Wed, 08 Aug 2018 10:00:29 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 2f6bfb96-216c-4602-b29e-dab642aaae2a
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 443775403a55bbc6-LHR
+        body: '{"error_code":"auth_failed","error_messages":{"username":[{"code":"invalid_supplied_credentials","message":"Authentication failed with the supplied credentials","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=rjnienaber%40gmail.com&api_key=ef0fd50fca1fb14c1fab3a8436b9ecb65f02f129fd87eafa45ded8ae257528f0'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:31 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d0edf63aa0ed9b4861c18baaf0c945c191533117629; expires=Thu, 01-Aug-19 10:00:29 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=6WuUIDK5vElasCOrRA+zCk7HpNLxfCtPJ/S3Pk/3L5s2VovADNjN7eLS63jwYDfw6w7N0szD2HNkyLpSxcP85qnKmg7irWnguV0NlKrKveTwNrzi4Qm4ICq1e1/e; Expires=Wed, 08 Aug 2018 10:00:29 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 3544b513-5dfb-4b43-95fa-b9049cac8b14
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 44377541897ebbe4-LHR
+        body: '{"auth_token":"9d3df43083aa7b0b0df54af93075ca2e"}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/settlements/51c619e0-0256-40ad-afba-ca4114b936f9/unrelease'
+        headers:
+            Host: devapi.currencycloud.com
+            Content-Length: '0'
+            Accept-Encoding: null
+            X-Auth-Token: 9d3df43083aa7b0b0df54af93075ca2e
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '404'
+            message: 'Not Found'
+        headers:
+            Date: 'Wed, 01 Aug 2018 10:00:32 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=dd0d8abc18fa168bd70d9c88aa9c860721533117631; expires=Thu, 01-Aug-19 10:00:31 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=9McaWQ8ci1Z1I7OqmLERKWaypGn9XQ7/6CReGvmJJ6xISVCNMmZV5xAokkEzreh7OxI3c+fj7p/u6xYi6ZiLx/2CnqBNMAdAFv4afYeh+tuhHivf8hl/N/a0v92d; Expires=Wed, 08 Aug 2018 10:00:31 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 25334e20-17a9-467a-a9b4-8afa7ba06b4f
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 4437754cbc78bbd8-LHR
+        body: '{"error_code":"settlement_not_found","error_messages":{"id":[{"code":"settlement_not_found","message":"Settlement was not found for this id","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=ashley.ford%2Bdevcentre%40currencycloud.com&api_key=57b40fe690f09b8e463d9601b9b9de86572688cb13e70c9cc65247f18a89215c'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:51 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d536bd42704dbc8315092b64b10bee24d1533292610; expires=Sat, 03-Aug-19 10:36:50 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=HjY6xuM8xKII9PBviIPRbOckQhU0MGfOHOUbwnwST56F+envGNdwfXOEKOZIJ8SF/VAjfKaArcD47cNX+GYgCMPTbBv2wtF1xa7nh2V3sUs4AzdHPEQtJ+l80V2Z; Expires=Fri, 10 Aug 2018 10:36:50 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 1d3135b9-0081-463c-ba79-17f3f2709f36
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 4448253e79f1bbb4-LHR
+        body: '{"auth_token":"2c7a1e97ec3f2e9df052fd4aae331b03"}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/settlements/51c619e0-0256-40ad-afba-ca4114b936f9/unrelease'
+        headers:
+            Host: devapi.currencycloud.com
+            Content-Length: '0'
+            Accept-Encoding: null
+            X-Auth-Token: 2c7a1e97ec3f2e9df052fd4aae331b03
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '403'
+            message: Forbidden
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:52 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d302c2f1737f80c9daf0e930045db30d41533292612; expires=Sat, 03-Aug-19 10:36:52 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=2nw/elj27Gu4CnYoVl53FYuz609xRUwwuDbpTHDcqP2EW00wVX2hpOTKMiH4pf8xjQVWth+LpmMp9XKS/QguIFNHX649gTLRO6dOnZj3zqlA/KHMF5ZqYChnkLlw; Expires=Fri, 10 Aug 2018 10:36:52 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 10d55c35-12ec-4816-9a0c-b36aad4ac338
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 44482549fd30bbba-LHR
+        body: '{"error_code":"permission_denied","error_messages":{"base":[{"code":"permission_denied","message":"You do not have permission ''settlement_write'' to perform this operation","params":{}}]}}'

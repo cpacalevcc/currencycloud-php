@@ -11,3 +11,36 @@
       Content-Length: '49'
       X-Request-Id: '2771875643610572878'
     body: '{"error_code":"internal_application_error","error_messages":{"base":[{"code":"internal_application_error","message":"A general application error occurred","params":{"request_id":2771875643610572878}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=ashley.ford%2Bdevcentre%40currencycloud.com&api_key=57b40fe690f09b8e463d9601b9b9de86572688cb13e70c9cc65247f18a89215c'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:17 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=de78fe4f82f74b759207e828dc46eb6fe1533292575; expires=Sat, 03-Aug-19 10:36:15 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=FkhwRPFopzsXphzl9GWI0BVtfPYU9RXagi/qPkZ1iRZtpN+XR2E86Tpt7SCCMSZxqYqlFQN5riHobTGCbzk94GgDyOaZNB1Eiz1MhbnccCWEf7FH8Z4HBbngpN1o; Expires=Fri, 10 Aug 2018 10:36:15 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 66f59ebd-515d-4d94-892b-dcc02807f054
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 44482463d8dcbbe4-LHR
+        body: '{"auth_token":"65a89a04233d85c31f3aa8188a8338f3"}'

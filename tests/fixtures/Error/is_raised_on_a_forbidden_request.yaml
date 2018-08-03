@@ -11,3 +11,36 @@
       Content-Length: '49'
       X-Request-Id: '2771879819392580288'
     body: '{"error_code":"auth_failed","error_messages":{"username":[{"code":"invalid_supplied_credentials","message":"Authentication failed with the supplied credentials","params":{}}]}}'
+-
+    request:
+        method: POST
+        url: 'https://devapi.currencycloud.com/v2/authenticate/api'
+        headers:
+            Host: devapi.currencycloud.com
+            Expect: null
+            Accept-Encoding: null
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: 'CurrencyCloudSDK/2.0 PHP/0.11.0'
+            Accept: null
+        body: 'login_id=ashley.ford%2Bdevcentre%40currencycloud.com&api_key=57b40fe690f09b8e463d9601b9b9de86572688cb13e70c9cc65247f18a89215c'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Date: 'Fri, 03 Aug 2018 10:36:15 GMT'
+            Content-Type: application/json;charset=utf-8
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Set-Cookie: '__cfduid=d3efb542aba4102c80ce23c595b4178001533292573; expires=Sat, 03-Aug-19 10:36:13 GMT; path=/; domain=.currencycloud.com; HttpOnly, AWSALB=9MH0fWeGZu5pzdG9XdiVZe4oQKCRZhRQPwwZmx+XACGUcJ9URViu6v/3clnKh4QDPv8FQFRUZg/220RJBn2RFk7Xs83FKUAZ/RGSeds915Q/ktAtEQepqQBCqPu1; Expires=Fri, 10 Aug 2018 10:36:13 GMT; Path=/'
+            Access-Control-Allow-Origin: '*'
+            X-Request-Id: 8ec14656-dd66-4c6a-ab1d-a58c50ebe2cc
+            Access-Control-Allow-Methods: POST
+            X-Content-Type-Options: nosniff
+            Vary: Origin
+            Access-Control-Allow-Headers: 'authorization,Access-Control-Allow-Origin,Content-Type,SOAPAction,X-Auth-Token,Origin,Authority'
+            Expect-CT: 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"'
+            Server: cloudflare
+            CF-RAY: 444824581d76bbc0-LHR
+        body: '{"auth_token":"be856362d0e8d5a678b7ccf48a383ee2"}'

@@ -179,12 +179,10 @@ EOT;
      */
     public function isRaisedWhenAResourceIsNotFound()
     {
-
         $this->setExpectedException(NotFoundException::class);
 
         $client = $this->getAuthenticatedClient();
-        $client->beneficiaries()
-            ->retrieve('081596c9-02de-483e-9f2a-4cf55dcdf98c');
+        $client->beneficiaries()->retrieve('081596c9-02de-483e-9f2a-4cf55dcdf98c');
     }
 
     /**
@@ -193,11 +191,7 @@ EOT;
      */
     public function isRaisedWhenToManyRequestsHaveBeenIssued()
     {
-
         $this->setExpectedException(ToManyRequestsException::class);
-
-        $this->getClient()
-            ->authenticate()
-            ->login();
+        $this->getClient()->authenticate()->login();
     }
 }
